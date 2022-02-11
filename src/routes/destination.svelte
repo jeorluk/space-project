@@ -6,8 +6,6 @@
 	import { fade } from 'svelte/transition';
 
 	let index = 0;
-
-	// $: destination = destinations[index];
 </script>
 
 <SliderListener bind:index maxIndex={destinations.length} />
