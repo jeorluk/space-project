@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+:root {
+	--color-dark: 11, 13, 23;
+	--color-mid: 208, 214, 249;
+	--color-light: 255, 255, 255;
+
+	background-color: rgb(var(--color-dark));
+	color: rgb(var(--color-light));
+
+	font-family: 'Barlow';
+	font-size: 0.938rem;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	color: rgb(var(--color-mid));
+	line-height: 1.563rem;
+}
+.heading1,
+.heading2,
+.heading3,
+.heading4,
+.subheading1 {
+	font-weight: normal;
+	font-family: 'Bellefair', serif;
+	text-transform: uppercase;
+}
+
+.heading5,
+.subheading2 {
+	margin: 0;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.heading1 {
+	font-size: 5rem;
+	line-height: 6.25rem;
+}
+
+.heading2 {
+	font-size: 3.5rem;
+}
+
+.heading3 {
+	font-size: 1.5rem;
+}
+
+.heading4 {
+	font-size: 1rem;
+}
+
+.heading5 {
+	font-size: 1rem;
+	letter-spacing: 0.169rem;
+	color: rgb(var(--color-mid));
+}
+
+.subheading1 {
+	font-size: 1.75rem;
+}
+
+.subheading2 {
+	font-size: 0.875rem;
+	letter-spacing: 0.147rem;
+}
+
+.light {
+	color: rgb(var(--color-light));
+}
+.light_dim {
+	font-weight: bold;
+	color: rgba(var(--color-light), 0.25);
+}
+
+/* Tablet Screen Sizes */
+@media screen and (min-width: 641px) {
+	:root {
+		font-size: 1rem;
+	}
+	p {
+		line-height: 1.75rem;
+	}
+
+	.heading1 {
+		font-size: 9.375rem;
+	}
+
+	.heading2 {
+		font-size: 5rem;
+	}
+
+	.heading3 {
+		font-size: 2.5rem;
+	}
+
+	.heading4 {
+		font-size: 1.5rem;
+	}
+
+	.heading5 {
+		font-size: 1.25rem;
+		letter-spacing: 0.211rem;
+	}
+
+	.subheading1 {
+		font-size: 1.75rem;
+	}
+
+	.subheading2 {
+		font-size: 0.875rem;
+		letter-spacing: 0.147rem;
+	}
+}
+
+/* Desktop Screen Sizes */
+@media screen and (min-width: 1008px) {
+	:root {
+		font-size: 1.125rem;
+	}
+
+	p {
+		line-height: 2rem;
+	}
+	.heading1 {
+		font-size: 9.375rem;
+		margin: 1rem;
+	}
+
+	.heading2 {
+		font-size: 6.25rem;
+	}
+
+	.heading3 {
+		font-size: 3.5rem;
+	}
+
+	.heading4 {
+		font-size: 2rem;
+	}
+
+	.heading5 {
+		font-size: 1.75rem;
+		letter-spacing: 0.297rem;
+	}
+
+	.subheading1 {
+		font-size: 1.75rem;
+	}
+
+	.subheading2 {
+		font-size: 0.875rem;
+		letter-spacing: 0.147rem;
+	}
+}
