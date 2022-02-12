@@ -2,25 +2,25 @@
 	import { page } from '$app/stores';
 </script>
 
-{#if $page.path === '/'}
+{#if $page.url.pathname === '/'}
 	<picture>
 		<source media="(max-width: 640px)" srcset="/home/background-home-mobile.jpg" />
 		<source media="(max-width: 1007px)" srcset="/home/background-home-tablet.jpg" />
 		<img src="/home/background-home-desktop.jpg" alt="Background" />
 	</picture>
-{:else if $page.path === '/crew'}
+{:else if $page.url.pathname === '/crew'}
 	<picture>
 		<source media="(max-width: 640px)" srcset="/crew/background-crew-mobile.jpg" />
 		<source media="(max-width: 1007px)" srcset="/crew/background-crew-tablet.jpg" />
 		<img src="/crew/background-crew-desktop.jpg" alt="Background" />
 	</picture>
-{:else if $page.path === '/destination'}
+{:else if $page.url.pathname === '/destination'}
 	<picture>
 		<source media="(max-width: 640px)" srcset="/destination/background-destination-mobile.jpg" />
 		<source media="(max-width: 1007px)" srcset="/destination/background-destination-tablet.jpg" />
 		<img src="/destination/background-destination-desktop.jpg" alt="Background" />
 	</picture>
-{:else if $page.path === '/technology'}
+{:else if $page.url.pathname === '/technology'}
 	<picture>
 		<source media="(max-width: 640px)" srcset="/technology/background-technology-mobile.jpg" />
 		<source media="(max-width: 1007px)" srcset="/technology/background-technology-tablet.jpg" />

@@ -8,22 +8,22 @@
 
 <nav class:open={isMenuOpen}>
 	<ul class="menu container">
-		<li class:current={$page.path === '/'}>
+		<li class:current={$page.url.pathname === '/'}>
 			<a on:click={() => (isMenuOpen = !isMenuOpen)} href="/"
 				><strong class="number">00</strong> Home</a
 			>
 		</li>
-		<li class:current={$page.path === '/destination'}>
+		<li class:current={$page.url.pathname === '/destination'}>
 			<a on:click={() => (isMenuOpen = !isMenuOpen)} href="/destination"
 				><strong class="number">01</strong> Destination</a
 			>
 		</li>
-		<li class:current={$page.path === '/crew'}>
+		<li class:current={$page.url.pathname === '/crew'}>
 			<a on:click={() => (isMenuOpen = !isMenuOpen)} href="/crew"
 				><strong class="number">02</strong> Crew</a
 			>
 		</li>
-		<li class:current={$page.path === '/technology'}>
+		<li class:current={$page.url.pathname === '/technology'}>
 			<a on:click={() => (isMenuOpen = !isMenuOpen)} href="/technology"
 				><strong class="number">03</strong> Technology</a
 			>
